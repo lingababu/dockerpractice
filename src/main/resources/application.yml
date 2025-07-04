@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: RealTimeInventoryManagementSystem_ServerApp
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/restapi
+    username: root
+    password: root
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        format_sql: true
+
+server:
+  port: 8888
